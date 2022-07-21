@@ -313,17 +313,21 @@ img {
 
 #addresses{
 	background:  #E4EDF6;
+	table-layout:fixed;
 }
 
+#addresses td{
+	word-wrap: break-word;
+}
 
 #addresses td:nth-child(1){
 	border-right: 10px solid white;
 	padding:10!important;
-	
 }
 #addresses td:nth-child(2){
 	border-left: 10px solid white;
 	padding:10!important;
+	
 }
 
 #addresses h2{
