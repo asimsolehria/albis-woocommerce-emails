@@ -28,9 +28,9 @@ $user_email = $email->object->user_email;
 <p><?php printf(esc_html__('You can change your details at any time under %s', 'email'),  make_clickable(esc_url(wc_get_page_permalink('myaccount'))));  ?></p>
 
 <div class="info-bluebox" style="background:#E4EDF6;padding:25px;">
-    <div><strong><?php strip_tags(printf(esc_html__('Username: %s', 'email'), strip_tags(esc_html($user_email))));
-                    ?></strong></div>
-    <div><strong><?php printf(esc_html__('Password:', 'email')); ?></strong> <?php printf(esc_html__('Your secret password', 'email')); ?></div>
+    <div><h2><?php strip_tags(printf(esc_html__('Username: %s', 'email'), strip_tags(esc_html($user_email))));
+                    ?></h2></div>
+    <div><h2><?php printf(esc_html__('Password:', 'email')); ?> <?php printf(esc_html__('Your secret password', 'email')); ?></h2></div>
 </div>
 
 <?php if ('yes' === get_option('woocommerce_registration_generate_password') && $password_generated && $set_password_url) : ?>

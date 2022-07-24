@@ -83,7 +83,7 @@ body {
 
 #template_header_image {
 	width: 800px;
-	text-align: center;
+	text-align: right;
 }
 
 #template_header_image img {

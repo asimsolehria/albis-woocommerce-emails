@@ -24,16 +24,16 @@ if (!defined('ABSPATH')) {
 
 <?php do_action('woocommerce_email_header', $email_heading, $email); ?>
 <?php
-$user_email = $email->object->user_email;
+$user_email = $email->user_email;
 ?>
 
-
+<h1>Sehr geehrte(r) <?php echo $user_login;?></h1>
 <p><?php esc_html_e('Someone has requested a new password for the following account on albis.ch', 'email'); ?></p>
 
 <?php /* translators: %s: Customer username */ ?>
 <div class="info-bluebox" style="background:#E4EDF6;padding:25px;">
-	<div class="remove-link-dec"><strong><?php strip_tags(printf(esc_html__('Username: %s', 'email'), strip_tags(esc_html($user_email))));
-																		?></strong></div>
+	<div class="remove-link-dec"><h1><?php strip_tags(printf(esc_html__('Username: %s', 'email'), strip_tags(esc_html($user_email))));
+																		?></h1></div>
 </div>
 
 <p style="padding-bottom:50px"><?php esc_html_e('If you didn\'t make this request, just ignore this email. If you\'d like to proceed:', 'email'); ?>
